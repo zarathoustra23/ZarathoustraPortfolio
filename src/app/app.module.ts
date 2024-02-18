@@ -10,6 +10,8 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
+import { TypingAnimationComponent } from './typing-animation/typing-animation.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { ContactComponent } from './contact/contact.component';
     AccueilComponent,
     PortfolioComponent,
     ResumeComponent,
-    ContactComponent
+    ContactComponent,
+    TypingAnimationComponent,
   ],
   imports: [
     BrowserModule,

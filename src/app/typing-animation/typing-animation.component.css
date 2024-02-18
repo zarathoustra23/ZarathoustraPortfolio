@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    align-items: center;
+    font-size:   20px;
+    font-weight: bold; /* Pour rendre le texte plus gras */
+    color: #071878;
+  }
+p{
+    color:#333;
+    margin-left: 10px;
+}
+.change{
+    color:rgb(8, 5, 106);
+    font-size:   25px;
+}
