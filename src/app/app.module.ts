@@ -11,6 +11,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { TypingAnimationComponent } from './typing-animation/typing-animation.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { TypingAnimationComponent } from './typing-animation/typing-animation.co
     ResumeComponent,
     ContactComponent,
     TypingAnimationComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,

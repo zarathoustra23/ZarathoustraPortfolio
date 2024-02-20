@@ -1,11 +1,15 @@
-li:hover{
-    scale:1.2;
-    transition: 0.4s;
-    color: aliceblue;
+li:hover {
+  scale: 1.2;
+  transition: 0.4s;
+  color: aliceblue;
 }
 /* typing-animation.component.css */
 a {
-    font-weight: bold; /* Pour rendre le texte plus gras */
-    color: #fbf9f9;
-  }
-  
+  font-weight: bold; /* Pour rendre le texte plus gras */
+  color: #fbf9f9;
+}
+a:hover ,.text-dark{
+  text-decoration: underline;
+  color: blue;
+  text-underline-offset:  8px;
+}

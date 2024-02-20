@@ -13,7 +13,7 @@ export class TypingAnimationComponent implements AfterViewInit {
     this.textElement = new ElementRef(null);
   }
   @ViewChild('textElement') textElement: ElementRef ;
-  words = ["Développeur front-end", "Infographiste"," Monteur vidéo"];
+  words = ["Développeur front-end...", "Infographiste..."," Monteur vidéo..."];
   currentWordIndex =  0;
   currentCharIndex =  0;
   typingSpeed =  150;
