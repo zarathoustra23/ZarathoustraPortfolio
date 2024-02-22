@@ -5,6 +5,10 @@
     font-size: 14px;
     line-height: 30px;
     border-radius: 25px;
-    background-color: blue;
     color: aliceblue;
+}
+#card:hover{
+    scale:1.05;
+    background-color: rgb(183, 194, 203);
+    transition: 0.8s;
 }
