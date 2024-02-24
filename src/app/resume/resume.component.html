@@ -1,1 +1,43 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button class="btn btn-primary mb-5 shadow border" (click)="DownloadCV()">Télécharger mon CV</button>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group heading="Certifications">
+                <div class="row">
+                    <div class="col-lg shadow border a-1" id="box">
+                        <div class="text-center">
+                          <h3>Certification Javascript</h3>
+                          <img src="../../assets/javasciptCertification.png" alt="Mon certificat Javascript Sur freecodeCamp">
+                          <p>
+                            délivrée sur <a href="https://www.freecodecamp.org/">freecodeCamp</a>
+                          </p>
+                        </div>
+                      </div>
+                    <div class="col-lg shadow border a-1" id="box">
+                      <div class="text-center">
+                        <h3>Certification Python</h3>
+                        <img src="../../assets/pythonCertification.png" alt="Mon certificat Python Sur funMooc">
+                        <p>
+                            délivrée sur <a href="https://www.fun-mooc.fr/fr/">funMooc</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </accordion-group>
+            <accordion-group heading="Notre Entreprise">
+                <div class="row">
+                    <div class="col-lg shadow border a-1" id="box">
+                        <div class="text-center">
+                          <h3>SnowSky</h3>
+                          <img src="../../assets/img_Projet/affiches/SnowSky presentation.jpg" alt="Mon certificat Javascript Sur freecodeCamp">
+                          <p>
+                            Visitez notre site Web <a href="https://www.snowsky-dev.com/">SnowSky-dev</a>
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+            </accordion-group>
+        </accordion>
+    </div>
+    
+</div>

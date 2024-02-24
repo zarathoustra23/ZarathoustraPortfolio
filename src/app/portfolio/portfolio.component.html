@@ -1,24 +1,115 @@
 <div class="container">
   <div class="mb-2">
     <div>
-      <button class="btn btn-outline-primary mb-2 me-2" (click)="isCollapsed= !isCollapsed">Filtre</button>
+      <button
+        class="btn btn-outline-primary mb-2 me-2"
+        (click)="isCollapsed = !isCollapsed"
+      >
+        Filtrer
+      </button>
+      <button
+        class="btn btn-outline-secondary mb-2"
+        (click)="resetFilter()"
+        [hidden]="!filtering"
+      >
+        Tout afficher
+      </button>
     </div>
     <div [collapse]="isCollapsed" [isAnimated]="true">
-        <div class="border mb-2 shadow-sm" style="width: 250px;">
-        <form >
-            <div class="row mx-0">
-              <div class="col">
-                <small><b>Langue:</b></small>
-                <div class="form-group">
-                  <div class="form-check">
-                    
-                  </div>
+      <div class="border mb-2 shadow-sm" style="width: 250px">
+        <form>
+          <div class="row mx-0">
+            <div class="col">
+              <small><b>Logiciels:</b></small>
+              <div class="form-group">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="photoshop"
+                    (change)="Filter()"
+                    name="photoshop"
+                  />
+                  <label class="form-check-label small">photoshop</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="illustrator"
+                    (change)="Filter()"
+                    name="Illustrator"
+                  />
+                  <label class="form-check-label small">Illustrator</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="premierePro"
+                    (change)="Filter()"
+                    name="premierePro"
+                  />
+                  <label class="form-check-label small">PremierePro</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="Aftereffect"
+                    (change)="Filter()"
+                    name="Aftereffect"
+                  />
+                  <label class="form-check-label small">AfterEffect</label>
                 </div>
               </div>
-              <div class="col">
-
+            </div>
+            <div class="col">
+              <small><b>Languages:</b></small>
+              <div class="form-group">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="HTML"
+                    (change)="Filter()"
+                    name="HTML"
+                  />
+                  <label class="form-check-label small">HTML</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="CSS"
+                    (change)="Filter()"
+                    name="CSS"
+                  />
+                  <label class="form-check-label small">CSS</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="python"
+                    (change)="Filter()"
+                    name="python"
+                  />
+                  <label class="form-check-label small">Python</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="JavaScript"
+                    (change)="Filter()"
+                    name="JavaScript"
+                  />
+                  <label class="form-check-label small">JavaScript</label>
+                </div>
               </div>
             </div>
+          </div>
         </form>
       </div>
     </div>
