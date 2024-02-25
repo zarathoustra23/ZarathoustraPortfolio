@@ -5,12 +5,20 @@
 <div class="modal-body">
   <carousel>
     <div *ngFor="let picture of project.pictures">
-      <slide
-        ><img
-          src="{{ picture }}"
-          alt="image 1 du projet"
-          style="display: block; width: 100%"
-      /></slide>
+      <div *ngIf="picture.includes('.jpg') || picture.includes('.png') || picture.includes('.gif')">
+        <slide
+          ><img
+            src="{{ picture }}"
+            alt="image 1 du projet"
+            style="display: block; width: 100%"
+        /></slide>
+      </div>
+      <div *ngIf="picture.includes('.mp4') ">
+        <video controls style="display: block; width: 100%">
+          <source src="{{ picture }}" type="video/mp4" >
+          Votre navigateur ne supporte pas la vidéo.
+        </video>        
+      </div>
     </div>
   </carousel>
   <h3 class="mt-2">Description</h3>
