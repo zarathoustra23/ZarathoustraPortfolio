@@ -8,7 +8,6 @@ export class Tag{
     static readonly PYTHON = new Tag("python","#008000");
     static readonly JAVASCRIPT = new Tag("javaScript","#008000");
     private constructor(private readonly key:string,public readonly color:string){
-
     }
     toString(){
         return this.key;

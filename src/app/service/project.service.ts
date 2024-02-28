@@ -27,7 +27,7 @@ export class ProjectService {
     {
       id: 1,
       name: '2 Affiches et 1 Logo',
-      summary: 'Entreprise de livraison de plats ( LeChef )',
+      summary: 'Entreprise de livraison de plats (LeChef)',
       description:
         'Mes créations pour une entreprise de livraison de plats : un logo et 2 affiches ',
       projectLink:
